@@ -1,0 +1,277 @@
+<!-- Página principal do portfólio pessoal -->
+<!-- Desenvolvido para a disciplina Fundamentos da Programação Web -->
+<!DOCTYPE html> <!-- Define que o documento utiliza HTML5 -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Enio Max Pereira dos Reis</title> <!--Bloco explicativo no topo do head facilita a leitura para outros desenvolvedores.-->
+    
+    <link rel="stylesheet" href="estilo.css"><!--Link para o arquivo externo CSS-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Container principal do menu de navegação -->
+            <!-- Utiliza Flexbox no CSS para organizar os elementos horizontalmente -->
+            <div class="container-nav"> <!--Opção pelo uso de <div> (elementos de bloco genéricos) e elementos semânticos (como <nav>, <ul> e <li>) em vez de tabelas para criar layouts e menus.-->
+                <div class="logo-area">
+        <img src="foto-perfil.png" alt="foto do perfil de Enio" title="foto do Enio" class="foto-topo">
+        <h1 class="logo">Enio Max</h1>
+    </div>
+           
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+ <!-- Menu principal de navegação do site -->               
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+    <span class="acessibilidade"> <!-- Botões de acessibilidade que permitem ao usuário aumentar (A+) ou diminuir (A-) o tamanho da fonte da página, melhorando a legibilidade e a experiência de navegação -->
+        <button id="aumentarFonte" aria-label="Aumentar tamanho do texto" title="Aumentar Fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho do texto" title="Reduzir Fonte">A-</button>
+    </span>
+</li>
+                </ul>
+
+            <div class="tech-stack-container">
+                    <img src="imag-pc.jpeg" alt="Computador com logos de tecnologias de programação" title="Computador com ícones de programação" class="icone-tech-stack">
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!--Seção: Sobre Mim - informações pessoais e apresentação-->
+        <section id="sobre" class="secao sobre-mim">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="conteudo-sobre">
+                    <div class="texto-sobre">
+                        <p>
+                            Meu nome é <strong>Enio Max Pereira dos Reis</strong>, tenho 52 anos e sou natural de Recife, Pernambuco. 
+                            Possuo uma trajetória profissional diversificada, tendo vivido em Londres de 2000 a 2008, onde adquiri 
+                            experiência em ambientes internacionais e aprimorei meu inglês até o nível fluente.
+                        </p>
+                        <p>
+                            Atualmente, estou em transição de carreira, cursando <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> 
+                            no Centro Universitário Internacional UNINTER, com o objetivo de me especializar em desenvolvimento web fullstack e tecnologia da informação.
+                        </p>
+                        <p>
+                            Sou uma pessoa apaixonada por aprendizado contínuo, com forte interesse em tecnologia, desenvolvimento 
+                            de soluções inovadoras e empreendedorismo.
+                        </p>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Meus Hobbies</h3>
+                      <ul>
+     <!-- Lista de hobbies com ícones ilustrativos -->                   
+    <li>
+        <img src="culinaria.png" alt="Ícone de Culinária" class="icone-hobby"> Adoro cozinhar! Trabalhei em cozinhas no Reino Unido e continuo aprimorando minhas habilidades culinárias.
+    </li>
+    <li>
+        <img src="violao.png" alt="Ícone de Violão" class="icone-hobby"> Toco violão como forma de expressão artística e relaxamento.
+    </li>
+    <li>
+        <img src="xadrez.png" alt="Ícone de Xadrez" class="icone-hobby"> Jogo xadrez regularmente, apreciando a estratégia e o pensamento lógico.
+    </li>
+    <li>
+        <img src="calistenia.png" alt="Ícone de Exercício" class="icone-hobby"> Estou em uma rotina de exercícios para melhorar meu condicionamento físico e bem-estar geral.
+    </li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Formação - apresenta formação acadêmica e cursos-->
+        <section id="formacao" class="secao formacao">
+            <div class="container">
+                <h2>Formação</h2>
+                <div class="cursos-grid">
+                    <div class="curso-card">
+                        <h3>Programação Web</h3>
+                        <p class="instituicao">IFRS</p>
+                        <p class="descricao"> Curso completo em Programação Web, abrangendo HTML5, CSS3, JavaScript, Banco de Dados e Sistemas Web.</p>
+                    </div>
+                    <div class="curso-card">
+    
+                            <h3>Python Fundamental I e II</h3>
+                        <p class="instituicao">Cisco Netacademy</p>
+                        <p class="descricao"> Formação em Python fundamentals com foco em programação estruturada e boas práticas de desenvolvimento.</p>
+                    </div>
+                    <div class="curso-card">
+                        <h3>Fundamentos de Java</h3>
+                        <p class="instituicao">DIO (Digital Innovation One)</p>
+                        <p class="descricao">Introdução aos fundamentos da linguagem Java, orientação a objetos e desenvolvimento de aplicações.</p>
+                    </div>
+                    <div class="curso-card">
+                        <h3>Inglês Avançado</h3>
+                        <p class="instituicao">Experiência Internacional</p>
+                        <p class="descricao">Fluência em inglês adquirida através de 8 anos de residência em Londres (2000-2008). Nível avançado em conversação, leitura e escrita.</p>
+                    </div>
+                </div>
+                <div class="formacao-adicional">
+                    <h3>Formação Atual</h3>
+                    <p><strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> - Centro Universitário Internacional UNINTER</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Portfólio - apresenta projetos desenvolvidos -->
+        <section id="portfolio" class="secao portfolio">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <p class="intro-portfolio">Aqui estão alguns dos projetos que desenvolvi durante meus estudos em programação:</p>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <div class="projeto-header">
+                            <h3>Portal Informativo Propriá-SE</h3>
+                            <span class="status em-desenvolvimento">Em Desenvolvimento</span>
+                        </div>
+                        <p class="descricao-projeto">
+                            Portal web informativo dedicado à cidade de Propriá, Sergipe. Abrange conteúdos sobre turismo, economia, 
+                            social, esportes, política, curiosidades, história e gastronomia local. Projeto em fase de análise de viabilidade 
+                            e desenvolvimento de protótipos.
+                        </p>
+                        <ul class="tecnologias">
+                            <li class="tech-tag">HTML5</li>
+                            <li class="tech-tag">CSS3</li>
+                            <li class="tech-tag">JavaScript</li>
+                            <li class="tech-tag">Banco de Dados</li>
+                            <li class="tech-tag"> Sistemas Web</li>
+                        </ul>
+                    </div>
+                    <div class="projeto-card">
+                        <div class="projeto-header">
+                            <h3>Sistema de Cadastro de Funcionários</h3>
+                            <span class="status concluido">Concluído</span>
+                        </div>
+                        <p class="descricao-projeto">
+                            Desenvolvimento de uma aplicação de console para gestão de RH, 
+                            permitindo o cadastro, consulta e remoção de registros de funcionários. 
+                            O projeto aplica conceitos de estruturas de dados (listas e dicionários), 
+                            funções personalizadas e tratamento de exceções para garantir a robustez do sistema.
+                        </p>
+                        <ul class="tecnologias">
+                            <li class="tech-tag">Python 3</li>
+                            <li class="tech-tag">Lógica de Programação</li>
+                            <li class="tech-tag">Estruturas de Dados (Listas/Dicionários)</li>
+                            <li class="tech-tag">Tratamento de Exceções (Try/Except)</li>
+                        </ul>
+                        <a href="https://github.com/EnioMax/Progrm_Cadast_Func" target="_blank" rel="noopener noreferrer" class="btn-github">Ver Repositório no GitHub</a>
+                    </div>
+                    <div class="projeto-card">
+                        <div class="projeto-header">
+                            <h3>CoinKeeper (cofrinho)</h3>
+                            <span class="status concluido">Concluído</span>
+                        </div>
+                        <p class="descricao-projeto">
+                            Programa em Java que funciona como um cofrinho digital para guardar valores em Real, Dólar e Euro. Permite cadastrar moedas, listar,  consultar e converter os valores de forma simples. Utiliza conceitos de orientação a objetos para facilitar a organização e o cálculo automático do câmbio.
+                        </p>
+                      <ul class="tecnologias">
+                            <li class="tech-tag">Java</li>
+                            <li class="tech-tag">Lógica de Programação</li>
+                            <li class="tech-tag">Orientação a Objetos</li>
+                     </ul>
+                     <a href="https://github.com/EnioMax/CoinKeeper" target="_blank" rel="noopener noreferrer" class="btn-github">Ver Repositório no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Contato - Formulário de contato  com validação em JavaScript-->
+        <section id="contato" class="secao contato">
+    <div class="container">
+        <div class="redes-sociais">
+            <h2>Minhas Redes e Contatos</h2>
+            <ul>
+                <li>
+                    <strong>LinkedIn:</strong> 
+                    <a href="https://www.linkedin.com/in/enio-max-pereira-dos-reis-b16556232/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/enio-max-pereira-dos-reis-b16556232/</a>
+                </li>
+                <li>
+                    <strong>Instagram:</strong> 
+                    <a href="https://www.instagram.com/eniomaxreis/" target="_blank" rel="noopener noreferrer">@eniomaxreis</a>
+                </li>
+                <li>
+                    <strong>GitHub:</strong> 
+                    <a href="https://github.com/EnioMax" target="_blank" rel="noopener noreferrer">github.com/EnioMax</a>
+                </li>
+                <li>
+                    <strong>WhatsApp:</strong> 
+                    <a href="https://wa.me/5581995469039" target="_blank" rel="noopener noreferrer">(81) 99546-9039</a>
+                </li>
+                <li>
+                    <strong>E-mail:</strong> 
+                    <a href="mailto:eniomax@gmail.com">eniomax@gmail.com </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="container">
+                <h3>Mensagem</h3>
+
+                <p class="intro-contato">Deixe a sua mensagem? Preencha o formulário abaixo e entrarei em contato em breve.</p>
+                <form id="formularioContato" class="formulario-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome" 
+                            placeholder="Seu nome completo" 
+                            required>
+                        <span class="erro" id="erroNome"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="seu.email@dominio.com" 
+                            required
+                        >
+                        <span class="erro" id="erroEmail"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem: <br></label>
+                        <textarea 
+                            id="mensagem" 
+                            name="mensagem" 
+                            placeholder="Sua mensagem aqui..." 
+                            rows="5" 
+                            required
+                        ></textarea>
+                        <span class="erro" id="erroMensagem"></span>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+                <div id="mensagemSucesso" class="mensagem-sucesso" style="display: none;">
+                    ✓ Mensagem enviada com sucesso! Obrigado pelo contato.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Enio Max Pereira dos Reis. Todos os direitos reservados.</p>
+            <p>Desenvolvido como atividade prática de Fundamentos da Programação Web - UNINTER</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!--vincula uma lógica externa para adicionar interatividade ao portfólio-->
+</body>
+</html>
